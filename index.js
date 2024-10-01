@@ -1,43 +1,63 @@
-const prompt = require('prompt-sync'); 
-const entrada = prompt(); 
+const prompt = require('prompt-sync');
+const entrada = prompt();
 
-const nomeCompleto = "Vitoria Eduarda Araujo"; 
+const nomeCompleto = "Vitoria Eduarda Araujo";
 const anoNascimento = 2006;
-let anoAtual = 2024; 
-let idade = 18;
+let anoAtual = 2024;
+let idade = 17;
 
- console.log("Olá eu sou " + nomeCompleto + " estamos no ano de " + anoAtual + " minha idade é " + idade + ".");
+console.log("Olá eu sou " + nomeCompleto + " estamos no ano " + anoAtual + " minha idade atual é "  + idade + " e sou nascido no ano " + anoNascimento );
 
-let AnoAtual = 2025; 
-let Idade = 18; 
-const NomeCompleto = " Vitoria Eduarda Araujo "; 
-const Faculdade = " nenhuma ";
+anoAtual = anoAtual + 1;
+idade = idade +1;
 
-console.log("Olá meu nome é " + NomeCompleto + ", tenho " + Idade + " anos " + "estamos no ano de " + AnoAtual + " gostaria de fazer faculdade na área de " + Faculdade);
+console.log (`oi eu sou ${nomeCompleto} meu ano de nascimento é ${anoNascimento} e estamos no ano ${anoAtual} e minha idade é ${idade}`);
 
-console.log(`oi eu sou ${NomeCompleto} meu ano de nascimento é ${anoNascimento} minha idade é ${idade}`) 
-  
-const listaDeViagens = new Array (
-  `Dubai`, 
-  `Paris`, 
-  `Miami`, 
-  `Chile`,
-  `Toquio`
-);
-console.log(listaDeViagens)
+const loginCerto = "Vitoria";
+const senhaCerta = 141;
 
-console.log( listaDeViagens [4])
-listaDeViagens.push("Coronel Vivida"); 
+console.log("------------");
+console.log("--AGENCIA DE VIAGENS--");
+console.log("------------");
+console.log("Faça seu login");
+
+var login = entrada("Digite seu login: ");
+var senha = entrada("Digite sua senha");
+
+
+while(login != loginCerto){
+  console.log("loginIncorreto");
+  login = entrada("digite seu login novamente: ");
+}
+while(senha != senhaCerta){
+  console.log("senha Incorreta");
+  senha = entrada("digite sua senha novamente: ");
+}
+
+const listaDeViagens = new Array(
+'Japão',
+'Londres',
+'paris',
+'Inglaterra',
+) ;
+
+console.log(listaDeViagens) ;
+
+console.log(listaDeViagens[4]);
+listaDeViagens.push("Coronel Vivida");
 console.log(listaDeViagens);
 
-listaDeViagens.splice(1,2); 
-console.log(listaDeViagens); 
+listaDeViagens.splice(3,1);
 
-var nomeComprador = entrada (" qual é seu nome? ");
-var idadeComprador = entrada("qual é sua idade? ");
+var nomeComprador = entrada("Qual seu nome?");
+var idadeComprador = entrada("Qual sua idade?");
 
-if(idadeComprador < 18){
- console.log(`ola sua idade nao corresponde com nossas diretrizes ${nomeComprador}`);
-  }
-if(idadeComprador >= 18){
-  console.log("Parabéns vpcê adiquiriu sua passagem com sucesso!")}
+if (idadeComprador<18){
+
+console.log(`Olá senhor(a) ${nomeComprador} infelizmente você não poderá viajar conosco`);
+  console.log(`Já que sua idade é ${idadeComprador}`)
+};
+if (idadeComprador>=18){
+  console.log(`Párabens senhor(a) ${nomeComprador} ,você é apto à viajar,para onde deseja ir? Os destinos são ${listaDeViagens}`);
+}
+
