@@ -16,9 +16,9 @@ console.log (`oi eu sou ${nomeCompleto} meu ano de nascimento é ${anoNascimento
 const loginCerto = "Vitoria";
 const senhaCerta = 141;
 
-console.log("------------");
-console.log("--AGENCIA DE VIAGENS--");
-console.log("------------");
+console.log("S2 S2 S2 S2 S2");
+console.log("--AGENCIA DE VIAGENS S2 S2");
+console.log("S2 S2 S2 S2 S2 S2");
 console.log("Faça seu login");
 
 var login = entrada("Digite seu login: ");
@@ -59,5 +59,7 @@ console.log(`Olá senhor(a) ${nomeComprador} infelizmente você não poderá via
 };
 if (idadeComprador>=18){
   console.log(`Párabens senhor(a) ${nomeComprador} ,você é apto à viajar,para onde deseja ir? Os destinos são ${listaDeViagens}`);
+
+
 }
 
