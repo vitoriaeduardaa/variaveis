@@ -1,10 +1,10 @@
 const prompt = require('prompt-sync');
 const entrada = prompt();
 
-const nomeCompleto = "Vitoria Eduarda Araujo";
+const nomeCompleto = "Vitoria Eduarda Araujo,";
 const anoNascimento = 2006;
 let anoAtual = 2024;
-let idade = 17;
+let idade = 18;
 
 console.log("Olá eu sou " + nomeCompleto + " estamos no ano " + anoAtual + " minha idade atual é "  + idade + " e sou nascido no ano " + anoNascimento );
 
@@ -16,9 +16,10 @@ console.log (`oi eu sou ${nomeCompleto} meu ano de nascimento é ${anoNascimento
 const loginCerto = "Vitoria";
 const senhaCerta = 141;
 
-console.log("S2 S2 S2 S2 S2");
-console.log("--AGENCIA DE VIAGENS S2 S2");
-console.log("S2 S2 S2 S2 S2 S2");
+console.log("♥");
+console.log("                ♥ ♥ ♥ AGENCIA DE VIAGENS ♥ ♥ ♥");
+console.log
+console.log("♥");
 console.log("Faça seu login");
 
 var login = entrada("Digite seu login: ");
